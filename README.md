@@ -10,6 +10,10 @@ Uses ESNext module syntax and Webpack packaging.
 
 ## Installation and Running
 
+Tested:
+npm: `8.1.4`
+node: `14.18.1`
+
 1. `git clone https://github.com/l00sed/p5js-boids-ts.git`
 2. `cd p5js-boids-ts`
 3. `npm install` (only once, to install dependencies and setup NPM environment)

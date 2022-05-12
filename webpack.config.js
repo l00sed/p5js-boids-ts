@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-    //mode: "development",
+    mode: "development", // Set to "development", "production", or "none"
     entry: {
         app: "./src/index.ts",
     },
     devtool: "source-map",
     //web server that serves the bundles from memory
     devServer: {
-        contentBase: "./dist",
+        static: "./dist",
     },
     plugins: [
         //this will clear the dist folder before building
