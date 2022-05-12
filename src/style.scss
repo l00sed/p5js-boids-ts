@@ -1,0 +1,68 @@
+$primary-color: #fff;
+$secondary-color: #000;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+    // We have set box-sizing in the body, so everything else
+    // will now inherit that setting
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background: $secondary-color;
+    height: 100vh;
+}
+
+.framerate {
+    color: #fff;
+    font-size: 1.4em;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+.controls {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    padding: 1em 3em;
+
+    & .control-group {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        justify-items: center;
+        background-color: lighten($secondary-color, 10);
+        border-radius: 10px;
+        justify-self: center;
+        padding: 1rem;
+        color: $primary-color;
+        font-family: sans-serif;
+        font-size: 1.4em;
+        font-weight: 700;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+.p5Canvas {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
