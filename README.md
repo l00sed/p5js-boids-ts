@@ -20,4 +20,4 @@ node: `14.18.1`
 5. `npm start` (run Webpack based on config, start local server on port 8080)
 6. F5 to start the debugger in Chrome
 
-Use `npm build` to build a `/dist` folder.
+Use `npm run build` to build a `/dist` folder.
